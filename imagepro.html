@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+p::first-line {
+  color: #0004ff;
+  font-variant: small-caps;
+}
+h2::after {
+  content: url(./logo.png);
+}
+h1::before {
+  content: url(./logo.png);
+}
+h3:hover{
+    color: red;
+}
+a:hover{
+    color: rgb(225, 65, 118);
+}
+a:visited{
+    color: seagreen;
+}
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod veniam atque nostrum, repellendus omnis esse minima alias, commodi rem fuga id mollitia! Magnam quibusdam perspiciatis dolorum laboriosam reiciendis voluptatibus porro, et, at sint id, veritatis ipsam ea ut debitis vitae laudantium consequatur suscipit natus! Tenetur laborum nam saepe perspiciatis!</p>
+    <h1>Example of pseudo element Before content</h1>
+    <h2>Example of pseudo element After content</h2>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+    <a href="https://google.com">Google</a>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://twitter.com">Twitter</a>
+    <a href="https://instagram.com">instagram</a>
+</body>
+</html>
